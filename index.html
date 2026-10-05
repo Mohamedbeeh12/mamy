@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى أغلى إنسانة في حياتي - أمي الحبيبة</title>
+    
+    <!-- الخطوط والمكتبات الخارجية -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ربط ملف الـ CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- خلفية القلوب والورد المتساقط -->
+    <div id="hearts-container"></div>
+
+    <!-- شاشة القفل -->
+    <div class="lock-screen" id="lockScreen">
+        <div class="lock-card">
+            <h2>مفاجأة  ❤️</h2>
+            <p>أدخلي كلمة السر لفتح الهدية يا أحلى أم في الدنيا</p>
+            
+            <div class="password-input-group">
+                <input type="password" id="passwordInput" placeholder="أدخلي كلمة السر هنا..." onkeypress="handleKeyPress(event)">
+                <div class="error-msg" id="errorMsg">كلمة السر غير صحيحة، حاولي مرة أخرى ❤</div>
+            </div>
+
+            <button class="btn-unlock" onclick="checkPassword()">
+                افتحي المفاجأة 
+            </button>
+            <p class="hint-text">تلميح: جربي كتابة (mom) أو (أمي) </p>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        
+        <header>
+            <h1 class="header-title">مامي حبيبتي ❤️️</h1>
+            <p class="header-subtitle">
+               احلى ام في العالم
+            </p>
+            <p>
+                one of one in world
+            </p>
+        </header>
+
+        <!-- معرض ذكريات الصور -->
+        
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="memory-card">
+                <div class="card-img-wrapper">
+                    <img src="image/1769790528116.jpg" >
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <div class="card-img-wrapper">
+                    <img src="image/IMG_20261005_034108.jpg">
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <div class="card-img-wrapper">
+                    <img src="image/IMAG0225(1).jpg">
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <div class="card-img-wrapper">
+                    <img src="image/IMAG0307.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الرسالة والمفاجأة -->
+        <div class="special-letter">
+            <div class="letter-content">
+                "أمي الغالية.. لو جمعت كل ورائحة الورد في العالم، وكل كلمات الشكر والمحبة، لن توفيكِ حقكِ علينا. شكراً لأنكِ دائماً السند، وشكراً على كل تضحية قمتِ بها من أجلنا. أسأل الله أن يحفظكِ لنا ويطيل في عمركِ ويبقيكِ تاجاً فوق رؤوسنا."
+            </div>
+        </div>
+
+        <footer>
+            اتعمل بكل ❤️ وحب علشانك يا أمي | <span id="year"></span>
+        </footer>
+
+    </div>
+
+    <!-- مكتبة الاحتفالات -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- ربط ملف الـ JavaScript الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
